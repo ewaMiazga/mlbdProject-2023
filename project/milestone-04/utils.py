@@ -96,23 +96,21 @@ def find_user_subtasks(subtasks, user_id):
 
 # Choose rows with not only 0 values (users that did not play the game)
 def get_random_ids(df, how_many, game, col):
-    print("a")
     user_ids = df.index.levels[0]
     random_user_ids = []
     
     for user in user_ids:
-        print(user)
-        print(df.loc[(user, game), col].sum())
-        if float(df.loc[(user, game), col].sum()) != 0.0:
+        if df.loc[(user, game), col].sum() != 0.0:
             random_user_ids.append(user)
 
     if len(random_user_ids) < how_many:
         return random_user_ids
     return np.array(random_user_ids)[: how_many]
 
+# Convert dataframe to csv file
 def convert_to_csv(df, name):
     df.to_csv(f'{name}')
 
-
+# Download the dataframe from csv file
 def load_from_csv(name):
     return pd.read_csv(f'{name}', index_col=[0,1,2])
