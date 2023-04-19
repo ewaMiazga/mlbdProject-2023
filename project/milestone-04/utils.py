@@ -96,10 +96,14 @@ def find_user_subtasks(subtasks, user_id):
 
 # Choose rows with not only 0 values (users that did not play the game)
 def get_random_ids(df, how_many, game, col):
+    print("a")
     user_ids = df.index.levels[0]
     random_user_ids = []
+    
     for user in user_ids:
-        if df.loc[(user, game), col].sum() != 0.0:
+        print(user)
+        print(df.loc[(user, game), col].sum())
+        if float(df.loc[(user, game), col].sum()) != 0.0:
             random_user_ids.append(user)
 
     if len(random_user_ids) < how_many:
