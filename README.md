@@ -10,6 +10,8 @@ Install pygraphviz from https://pygraphviz.github.io/documentation/stable/instal
 
 ## Repo structure
 
+### Main pipeline
+
 - milestone-4-calcularis-crusaders/project/milestone-04/m4_calcularis_calcularis_crusaders.ipynb
     - Integrated pipeline (preprocessing, baseline model, lgbm model, explainability, evaluation)
 
@@ -19,3 +21,7 @@ Install pygraphviz from https://pygraphviz.github.io/documentation/stable/instal
 - milestone-4-calcularis-crusaders/project/milestone-04/utils_lgbm.py
     - helper functions for lgbm models
     
+
+### Other experiments
+
+- 
