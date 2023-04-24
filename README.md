@@ -24,4 +24,15 @@ Install pygraphviz from https://pygraphviz.github.io/documentation/stable/instal
 
 ### Other experiments
 
-- 
+- milestone-4-calcularis-crusaders/project/milestone-04/Experiments-LGBM.ipynb
+    - LGBM initial experimentation. Includes knowledge tracing predictions for correctness
+    - Initial SHAP experimentation
+- milestone-4-calcularis-crusaders/project/milestone-04/Experiments-full-dataset.ipynb
+    - Using Dask to read the full dataset and perform pre-processing
+    - The noto notebook and server time out or run out of memory
+    - needs more work
+- milestone-4-calcularis-crusaders/project/milestone-04/Experiments-Transformer.ipynb
+    - Transformer initial experimentation
+    - Reached AUC of 0.776
+    - Preliminary visualization of attention maps for explainability, needs more work
+
