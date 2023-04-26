@@ -96,6 +96,7 @@ def find_user_subtasks(subtasks, user_id):
 
 # Choose rows with not only 0 values (users that did not play the game)
 def get_random_ids(df, how_many, game, col):
+    df.sort_index(inplace=True)
     user_ids = df.index.levels[0]
     random_user_ids = []
     
