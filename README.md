@@ -20,6 +20,9 @@ Install pygraphviz from https://pygraphviz.github.io/documentation/stable/instal
     
 - milestone-4-calcularis-crusaders/project/milestone-04/utils_lgbm.py
     - helper functions for lgbm models
+
+- milestone-4-calcularis-crusaders/project/milestone-04/report.pdf
+    - project report
     
 
 ### Other experiments
