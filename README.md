@@ -2,40 +2,55 @@
 
 # Calcularis Crusaders M4 Repo
 
+## Project contributors
+ - [Olivia Perryman](https://github.com/oliviaperryman)
+ - [Ewa Miazga](https://github.com/ewaMiazga)
+ - [Blanche Duron](https://github.com/BDURON99)
+
+## Project goal
+Creating prediction that will inform teacher about students seeking thier help. Early reaction should make student more chances to mastery skills.
+
 ## Requirements
-
-`pip install -r requirements.txt`
-
-Install pygraphviz from https://pygraphviz.github.io/documentation/stable/install.html
+```
+pip install -r requirements.txt
+```
+You can install pygraphviz using this link: 
+[pygraphviz](https://gitlab-stud.elka.pw.edu.pl/emiazga/seasupport/-/blob/main/doc/index.html)
 
 ## Repo structure
 
 ### Main pipeline
 
-- milestone-4-calcularis-crusaders/project/milestone-04/m4_calcularis_calcularis_crusaders.ipynb
-    - Integrated pipeline (preprocessing, baseline model, lgbm model, explainability, evaluation)
-
-- milestone-4-calcularis-crusaders/project/milestone-04/utils.py
-    - helper functions for preprocessing
-    
-- milestone-4-calcularis-crusaders/project/milestone-04/utils_lgbm.py
-    - helper functions for lgbm models
-
-- milestone-4-calcularis-crusaders/project/milestone-04/report.pdf
-    - project report
-    
+```
+milestone-4-calcularis-crusaders
+    └ project
+        └ milestone-04
+            ├ m4_calcularis_calcularis_crusaders.ipynb
+                - Integrated pipeline (preprocessing, baseline model, lgbm model, explainability, evaluation)
+            ├  utils.py
+                - helper functions for preprocessing
+            ├  utils_lgbm.py
+                - helper functions for lgbm models
+            └ report.pdf
+                - project report
+```    
 
 ### Other experiments
 
-- milestone-4-calcularis-crusaders/project/milestone-04/Experiments-LGBM.ipynb
-    - LGBM initial experimentation. Includes knowledge tracing predictions for correctness
-    - Initial SHAP experimentation
-- milestone-4-calcularis-crusaders/project/milestone-04/Experiments-full-dataset.ipynb
-    - Using Dask to read the full dataset and perform pre-processing
-    - The noto notebook and server time out or run out of memory
-    - needs more work
-- milestone-4-calcularis-crusaders/project/milestone-04/Experiments-Transformer.ipynb
-    - Transformer initial experimentation
-    - Reached AUC of 0.776
-    - Preliminary visualization of attention maps for explainability, needs more work
+```
+milestone-4-calcularis-crusaders
+    └ project
+        └ milestone-04
+            ├  Experiments-LGBM.ipynb
+                - LGBM initial experimentation. Includes knowledge tracing predictions for correctness
+                - Initial SHAP experimentation
+            ├  Experiments-full-dataset.ipynb
+                - Using Dask to read the full dataset and perform pre-processing
+                - The noto notebook and server time out or run out of memory
+                - needs more work
+            └ Experiments-Transformer.ipynb
+                - Transformer initial experimentation
+                - Reached AUC of 0.776
+                - Preliminary visualization of attention maps for explainability, needs more work
+```
 
