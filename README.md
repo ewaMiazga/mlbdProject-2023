@@ -1,14 +1,15 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-8d59dc4de5201274e310e4c54b9627a8934c3b88527886e3b421487c677d23eb.svg)](https://classroom.github.com/a/CNxME27U)
-
 # Calcularis Crusaders
 
 ## Project contributors
- - [Olivia Perryman](https://github.com/oliviaperryman)
  - [Ewa Miazga](https://github.com/ewaMiazga)
+ - [Olivia Perryman](https://github.com/oliviaperryman)
  - [Blanche Duron](https://github.com/BDURON99)
 
 ## Project goal
 Creating prediction that will inform teacher about students seeking thier help. Early reaction should make student more chances to mastery skills.
+
+## Results summary poster:
+[Poster](https://github.com/ewaMiazga/mlbdProject-2023/blob/main/MLBD_poster.pdf)
 
 ## Requirements
 ```
@@ -24,8 +25,11 @@ You can install pygraphviz using this link:
 ```
 milestone-4-calcularis-crusaders
     └ project
+        ├ milestone-02
+            └ m2_dataset.ipynb
+                - Initial analysis of dataset
         └ milestone-04
-            ├ m4_calcularis_calcularis_crusaders.ipynb
+            ├ Research.ipynb
                 - Integrated pipeline (preprocessing, baseline model, lgbm model, explainability, evaluation)
             ├  utils.py
                 - helper functions for preprocessing
@@ -34,6 +38,8 @@ milestone-4-calcularis-crusaders
             └ report.pdf
                 - project report
 ```    
+#### Snippet of dataframe created in Research.ipynb:
+![image](https://github.com/ewaMiazga/mlbdProject-2023/assets/126163122/1b3a139f-5f20-41b4-a6fd-894dbc38b773)
 
 ### Other experiments
 
@@ -53,4 +59,3 @@ milestone-4-calcularis-crusaders
                 - Reached AUC of 0.776
                 - Preliminary visualization of attention maps for explainability, needs more work
 ```
-
