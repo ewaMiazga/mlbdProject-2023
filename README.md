@@ -1,4 +1,4 @@
-# Calcularis Crusaders
+# MLBD project
 
 ## Project contributors
  - [Ewa Miazga](https://github.com/ewaMiazga)
